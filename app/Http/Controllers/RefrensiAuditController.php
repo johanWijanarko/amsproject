@@ -65,6 +65,15 @@ class RefrensiAuditController extends Controller
             'ref_audit_del_st' => 1
         ]);
         Alert::success('Success','Data berhasil di simpan');
-        return redirect('/rfaudit'.$request->parent);
+        return redirect('/rfaudit');
+    }
+
+    public function delete(Request $request, $id){
+        $affected = DB::table('ref_audit')
+        ->where('ref_audit_id', $id)
+        ->update([ 'ref_audit_del_st' => 0
+        ]);
+        Alert::success('Success','Data berhasil di Hapus');
+        return redirect('/rfaudit');
     }
 }
