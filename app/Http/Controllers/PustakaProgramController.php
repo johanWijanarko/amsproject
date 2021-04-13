@@ -109,4 +109,11 @@ class PustakaProgramController extends Controller
         // dd($detailPustaka);
         return view('pustaka_audit.detail_pustakaAudit',compact('detailPustaka'));
     }
+
+    function delete_pustaka_prog($id){
+        // dd($id);
+        DB::table('ref_program_audit')->where('ref_program_id', $id)->delete();
+        Alert::success('Success','Data berhasil di Dihapus');
+        return redirect('/pustaka_prog');
+    }
 }

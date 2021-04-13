@@ -42,7 +42,7 @@
 
                         <a href="{{ route('pustaka_prog.edit_pustaka_prog', $item->ref_program_id)}}" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-sm btn-outline-success rounded-circle"><i class="fas fa-pencil-alt"></i></a>
                         
-                        <a href="" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-sm btn-outline-danger rounded-circle"><i class="far fa-trash-alt"></i></a>
+                        <a href="{{ route('pustaka_prog.delete_pustaka_prog', $item->ref_program_id)}}" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-sm btn-outline-danger rounded-circle"><i class="far fa-trash-alt"></i></a>
                               
                     </td>
                   </tr>

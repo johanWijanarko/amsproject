@@ -84,6 +84,7 @@ Route::get('/pustaka_prog/edit/{id}',[PustakaProgramController::class,'edit_pust
 Route::get('/pustaka_prog/detail_pustaka_prog/{id}',[PustakaProgramController::class,'detail_pustaka_prog'])->name('pustaka_audit.detail_pustaka_prog');
 Route::post('/pustaka_prog/update_pustaka_prog/{id}',[PustakaProgramController::class,'update_pustaka_prog'])->name('pustaka_prog.update_pustaka_prog');
 Route::post('/pustaka_prog/save_pustaka_prog',[PustakaProgramController::class,'save_pustaka_prog'])->name('pustaka_prog.save_pustaka_prog');
+Route::get('/pustaka_prog/delete_pustaka_prog/{id}',[PustakaProgramController::class,'delete_pustaka_prog'])->name('pustaka_prog.delete_pustaka_prog');
 
 
 // Refrensi audite
