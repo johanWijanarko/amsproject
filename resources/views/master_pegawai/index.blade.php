@@ -5,7 +5,6 @@
 @section('content')
 <div style="margin-top: 20px;">
   <h1 class="h3 mb-3 text-gray-800">Daftar Pegawai Inspektorat Utama</h1>
-
 </div>
 <div style="position: absolute; right: 30px; margin-top: -50px;">
     <p>Cari Data Pegawai :</p>
@@ -14,12 +13,7 @@
         <input type="text" name="cari" placeholder="Input Nama .." value="{{ old('cari') }}">
         <input type="submit" value="CARI">
     </form>   
-</div>
-@if (Session::has('success'))
-<div class="alert alert-success" role="alert">
-    {{Session::get('success')}}
-</div>      
-@endif
+</div>     
 <a href="{{route('pegawai.tambah')}}" class="btn btn-sm btn-primary" role="button" aria-pressed="true" style="position: absolute; right: 30px; margin-top: 25px;" data-toggle="tooltip" title="Create"><i class="fas fa-plus-circle"></i></a>
 <table class="table table-bordered" style="margin-top: 40px;">
     <thead class="thead-dark">
