@@ -8,8 +8,7 @@
 		<div class="card-body">
 			<h4 class="card-title">Daftar Referensi Audit</h4>
 			<div style="margin-top: 20px; margin-left:10px;">
-
-            </div><br><br><br><br>
+            <br><br><br><br>
             <div style="position: absolute; right: 38px; margin-top: -120px; ">
                 <p>Cari Data Audite :</p>
                 <form action="{{ route('rfaudit.cari')}}" method="GET">
@@ -19,8 +18,8 @@
                 </form>   
             </div>
             <a href="{{route('rfaudit.tambah')}}" class="btn btn-sm btn-primary" role="button" aria-pressed="true" style="position: absolute; right: 38px; margin-top: -35px;" data-toggle="tooltip" title="Create"><i class="fas fa-plus-circle"></i></a>
-            <div class="col">
-            <table class="table table-bordered"> 
+            <div class="table-responsive">
+              <table class="table table-bordered"> 
                 <thead class="thead-dark">
                   <tr>
                     <th scope="col">No</th>
@@ -29,7 +28,7 @@
                     <th scope="col">Keterangan</th>
                     <th scope="col">Kategori</th>
                     <th scope="col">Lampiran</th>
-                    <th scope="col">Link</th>
+                    <th scope="col" style="width:100px;">Link</th>
                     <th scope="col" style="width:130px;">Aksi</th>
                   </tr>
                 </thead>
@@ -70,7 +69,8 @@
               </div>
               <br>
             </div>
-		</div>
-	</div>
+		  </div>
+	  </div>
+  </div>
 </div>
 @endsection
