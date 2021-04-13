@@ -12,7 +12,7 @@
             </div><br><br><br><br>
             <div style="position: absolute; right: 38px; margin-top: -120px; ">
                 <p>Cari Data Audite :</p>
-                <form action="" method="GET">
+                <form action="{{ route('rfaudit.cari')}}" method="GET">
                     {{ csrf_field() }}
                     <input type="text" name="cari" placeholder="Input Judul Program .." value="">
                     <input type="submit" value="CARI">
@@ -47,7 +47,7 @@
                       <a href="{{asset('storage/'.str_replace('public/', '', $item->ref_audit_attach))}}" class="badge badge-primary" id="sertifikat2" name="sertifikat2">{{str_replace('public/upload/', '', $item->ref_audit_attach)}}</a>
                     </td>
                     <td>
-                      <a href="{{asset('storage/'.str_replace('public/', '',$item->ref_audit_link))}}" class="btn btn-sm btn-outline-primary rounded-circle" id="sertifikat2" name="sertifikat2">{{str_replace('public/upload/', '', $item->ref_audit_link)}}<i class="fas fa-search"></i></a>
+                      <a href="{{$item->ref_audit_link}}" class="btn btn-sm btn-outline-primary rounded-circle" id="sertifikat2" name="sertifikat2"><i class="fas fa-search"></i></a>
                     </td>
                     <td>
                         <a href="" data-toggle="tooltip" data-placement="top" title="Detail" class="btn btn-sm btn-outline-primary rounded-circle"><i class="fas fa-info-circle"></i></a> 

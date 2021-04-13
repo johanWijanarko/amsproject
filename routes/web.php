@@ -86,9 +86,9 @@ Route::post('/pustaka_prog/update_pustaka_prog/{id}',[PustakaProgramController::
 Route::post('/pustaka_prog/save_pustaka_prog',[PustakaProgramController::class,'save_pustaka_prog'])->name('pustaka_prog.save_pustaka_prog');
 Route::get('/pustaka_prog/delete_pustaka_prog/{id}',[PustakaProgramController::class,'delete_pustaka_prog'])->name('pustaka_prog.delete_pustaka_prog');
 
-
 // Refrensi audite
 Route::get('/rfaudit',[RefrensiAuditController::class,'index']);
+Route::get('/rfaudit/cari',[RefrensiAuditController::class,'cari'])->name('rfaudit.cari');
 
 
 Auth::routes();
