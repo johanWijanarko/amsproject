@@ -34,17 +34,21 @@
                   </tr>
                 </thead>
                 <tbody>
-                {{-- @if ($refprogram):  --}}
-                  {{-- @foreach ($refprogram as $index=>$item) --}}
+                @if ($refaudit):  
+                   @foreach ($refaudit as $index=>$item)
                       
                   <tr>
-                    <th scope="row"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <th scope="row">{{ $index+1 }}</th>
+                    <td>{{$item->ref_audit_no_kode}}</td>
+                    <td>{{$item->ref_audit_nama}}</td>
+                    <td>{{$item->ref_audit_desc}}</td>
+                    <td>{{$item->kategori_ref_name}}</td>
+                    <td>
+                      <a href="{{asset('storage/'.str_replace('public/', '', $item->ref_audit_attach))}}" class="badge badge-primary" id="sertifikat2" name="sertifikat2">{{str_replace('public/upload/', '', $item->ref_audit_attach)}}</a>
+                    </td>
+                    <td>
+                      <a href="{{asset('storage/'.str_replace('public/', '',$item->ref_audit_link))}}" class="btn btn-sm btn-outline-primary rounded-circle" id="sertifikat2" name="sertifikat2">{{str_replace('public/upload/', '', $item->ref_audit_link)}}<i class="fas fa-search"></i></a>
+                    </td>
                     <td>
                         <a href="" data-toggle="tooltip" data-placement="top" title="Detail" class="btn btn-sm btn-outline-primary rounded-circle"><i class="fas fa-info-circle"></i></a> 
 
@@ -54,17 +58,17 @@
                               
                     </td>
                   </tr>
-                  {{-- @endforeach --}}
-                {{-- @else: --}}
+                  @endforeach
+                @else:
                   <tr>
                     <td class="c-table__cell u-text-center" colspan="8">No Content</td>
                   </tr>
-                {{-- @endif --}}
+                @endif
                 </tbody>
               </table>
               <br/>
               <div class="d-flex justify-content-center">
-                {{-- {{ $refprogram->links() }} --}}
+                {{ $refaudit->links() }}
               </div>
               <br>
             </div>
