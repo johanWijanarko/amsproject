@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+@import "reset.css";
+
+[class*="fontawesome-"]:before {
+	font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+	color: #000;
+	font-family: "Varela Round", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+    background-image: url(images/audit.jpeg);
+    background-position:top;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+@font-face {
+	font-family: 'Varela Round';
+	font-style: normal;
+	font-weight: 400;
+}
+
+#login {
+	margin: 9% auto 0px auto;
+	width: 400px;
+    opacity: 0.9;
+}
+
+#login h2 {
+	background-color: #fff;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	color: #1e7eb0;
+	font-size: 28px;
+	padding: 30px 26px;
+	font-weight: bold;
+    font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+    text-align: center;
+}
+#login .title-login {
+    margin: 5px 0px -15px 0px;
+}
+#login h2  img {
+	margin-top: -15px;
+	padding: 0px;
+    margin: -15px auto 5px auto;
+}
+
+#login fieldset {
+	background-color: #fff;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#login fieldset p {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#login fieldset input {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#login fieldset input[type="text"], #login fieldset input[type="password"]
+	{
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+	font-style: italic;
+}
+
+#login fieldset input[type="submit"] {
+	background-color: black;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
+    cursor: pointer;
+}
+
+#login fieldset input[type="submit"]:hover {
+	background-color: orange;
+}
+#footer {
+    margin: 20px auto;
+    font-size: 12px;
+    color: #FFF;
+    width: 300px;
+    text-align: center;
+}

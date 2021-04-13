@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.row-fluid [class*="span"] {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 30px;
+  margin-left: 2.127659574468085%;
+  *margin-left: 2.074468085106383%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+
+.row-fluid .span8 {
+  width: 65.95744680851064%;
+  *width: 65.90425531914893%;
+}
+
+.row-fluid .span4 {
+  width: 31.914893617021278%;
+  *width: 31.861702127659576%;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus{
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.input-append,
+.input-prepend {
+  margin-bottom: 5px;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.input-append input,
+.input-prepend input,
+.input-append select,
+.input-prepend select,
+.input-append .uneditable-input,
+.input-prepend .uneditable-input,
+.input-append .dropdown-menu,
+.input-prepend .dropdown-menu {
+  font-size: 14px;
+}
+
+.input-append input,
+.input-prepend input,
+.input-append select,
+.input-prepend select,
+.input-append .uneditable-input,
+.input-prepend .uneditable-input {
+  position: relative;
+  margin-bottom: 0;
+  *margin-left: 0;
+  vertical-align: top;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.input-append input:focus,
+.input-prepend input:focus,
+.input-append select:focus,
+.input-prepend select:focus,
+.input-append .uneditable-input:focus,
+.input-prepend .uneditable-input:focus {
+  z-index: 2;
+}
+
+.input-append .add-on,
+.input-prepend .add-on {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+}
+
+.input-append .add-on,
+.input-prepend .add-on,
+.input-append .btn,
+.input-prepend .btn {
+  vertical-align: top;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.input-append .active,
+.input-prepend .active {
+  background-color: #a9dba9;
+  border-color: #46a546;
+}
+
+.input-prepend .add-on,
+.input-prepend .btn {
+  margin-right: -1px;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../img/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+.icon-user {
+  background-position: -168px 0;
+}
+
+.icon-lock {
+  background-position: -287px -24px;
+}
+
+.btn {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 14px;
+  margin-bottom: 3px;
+  *margin-left: .3em;
+  font-size: 12px;
+  line-height: 20px;
+  *line-height: 20px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);  
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #486B91;
+  *background-color: #486B91;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5B7EA4), to(#486B91));
+  background-image: -webkit-linear-gradient(top, #5B7EA4, #486B91);
+  background-image: -o-linear-gradient(top, #5B7EA4, #486B91);
+  background-image: linear-gradient(to bottom, #5B7EA4, #486B91);
+  background-image: -moz-linear-gradient(top, #5B7EA4, #486B91);
+  background-repeat: repeat-x;
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #486B91 #bfbfbf;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#5B7EA4', endColorstr='#486B91', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+input[type="submit"].btn-block {
+  width: 100%;
+}
+
+body.login{
+    background: #776a56;
+}
+.login-container{
+    border-top: 20px solid #ff7a00;
+    margin-top: 60px;
+    position: relative;
+    background: #fff;
+    height: 480px;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.1); -moz-box-shadow:  2px 2px 4px rgba(0,0,0,0.1); box-shadow:  2px 2px 4px rgba(0,0,0,0.1);
+}
+.login-container .logo{
+     position: absolute; left: 50%;
+     margin-top: 10px;
+}
+.login-container .logo-daya{
+     position: absolute; left: 40%; top:480px;
+     margin-top: 10px;
+}
+.loginBox{
+	width: 320px; 
+	position: absolute; 
+	left: 50%; 
+	top: 50%; 
+	margin-top: 
+	-212px; 
+	margin-left: -160px;
+} 
+
+.loginForm{
+	background: #fff; 
+	border: 1px solid #CCC; 
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 6px rgba(67, 101, 139, 0.35); 
+	-moz-box-shadow: 0px 1px 6px rgba(67, 101, 139, 0.35);
+	box-shadow: 0px 1px 6px rgba(67, 101, 139, 0.35);
+}
+
+
+        
+.loginBlock{
+	width: 400px; 
+	position: absolute; 
+	left: 50%; top: 100px; 
+	margin-left: -160px; 
+	border: 10px solid #FFF; 
+	display: none; 
+}
+.loginBlock h1{
+	font-size: 28px;
+	font-weight: normal;
+	color: #776a56; 
+	background: #fff; 
+	margin: 0px; 
+	line-height: 32px; 
+	padding: 10px;
+	text-shadow: 1px 2px 0px #FFF;
+}
+.loginBlock .control-group{
+	margin-bottom: 10px;
+}
+.loginBlock .loginForm{
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; 
+	border-radius: 0px;
+	-webkit-box-shadow: none; 
+	-moz-box-shadow: none; 
+	box-shadow: none; 
+	border: 0px;
+}
+
+.loginBlock .loginForm input[type="text"], .loginBlock .loginForm input[type="password"]{
+	width: 238px;
+}
+
+.wrapper.skepia .btn{
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #fb841e;
+	*background-color: #fb841e;
+	background-image: -moz-linear-gradient(top, #fb841e, #da8a17);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d46f19), to(#d46f19));
+	background-image: -webkit-linear-gradient(top, #fb841e, #d46f19);
+	background-image: -o-linear-gradient(top, #fb841e, #d46f19);
+	background-image: linear-gradient(to bottom, #fb841e, #d46f19);
+	background-repeat: repeat-x;
+	border-color: #d46f19 #d46f19 #a65512;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb841e', endColorstr='#d46f19', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.wrapper.skepia .btn:hover {
+	color: #fff;
+	background-color: #d46f19;
+	*background-color: #d46f19;        
+}
