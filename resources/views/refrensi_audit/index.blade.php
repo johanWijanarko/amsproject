@@ -18,7 +18,7 @@
                     <input type="submit" value="CARI">
                 </form>   
             </div>
-            <a href="" class="btn btn-sm btn-primary" role="button" aria-pressed="true" style="position: absolute; right: 38px; margin-top: -35px;" data-toggle="tooltip" title="Create"><i class="fas fa-plus-circle"></i></a>
+            <a href="{{route('rfaudit.tambah')}}" class="btn btn-sm btn-primary" role="button" aria-pressed="true" style="position: absolute; right: 38px; margin-top: -35px;" data-toggle="tooltip" title="Create"><i class="fas fa-plus-circle"></i></a>
             <div class="col">
             <table class="table table-bordered"> 
                 <thead class="thead-dark">
