@@ -110,6 +110,7 @@ Route::get('/parameter',[ParameterController::class,'index']);
 // inspektorat
 Route::get('/paraminspektorat',[ParamInspektorat::class,'index']);
 Route::get('/paraminspektorat/tambah',[ParamInspektorat::class,'tambah'])->name('inspektorat.tambah_data');
+Route::get('/paraminspektorat/cari',[ParamInspektorat::class,'cari'])->name('inspektorat.cari');
 Route::post('/paraminspektorat/save',[ParamInspektorat::class,'save_inspektorat'])->name('inspektorat.save');
 Route::get('/paraminspektorat/edit/{id}',[ParamInspektorat::class,'edit'])->name('inspektorat.edit_data');
 Route::post('/paraminspektorat/update/{id}',[ParamInspektorat::class,'update_inspektorat'])->name('inspektorat.update_data');

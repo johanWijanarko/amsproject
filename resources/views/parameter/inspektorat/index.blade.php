@@ -11,7 +11,7 @@
             </div>
             <div style="position: absolute; right: 30px; margin-top: -50px;">
                 <p>Cari Data Pegawai :</p>
-                <form action="" method="GET">
+                <form action="{{route('inspektorat.cari')}}" method="GET">
                     {{ csrf_field() }}
                     <input type="text" name="cari" placeholder="Input Nama .." value="{{ old('cari') }}">
                     <input type="submit" value="CARI">

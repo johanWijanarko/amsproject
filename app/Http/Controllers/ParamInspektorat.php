@@ -17,6 +17,15 @@ class ParamInspektorat extends Controller
         // dd($inspektorat);
         return view('parameter/inspektorat.index', compact('inspektorat'));
     }
+    function cari(Request $request){
+        $cari = $request->cari;
+        $inspektorat = DB::table('par_inspektorat')
+        ->where('inspektorat_del_st', 1)
+        ->where('inspektorat_name', $cari)
+        ->paginate(10);
+        // dd($inspektorat);
+        return view('parameter/inspektorat.index', compact('inspektorat'));
+    }
 
     function tambah(){
         return view('parameter/inspektorat.tambah_data');
