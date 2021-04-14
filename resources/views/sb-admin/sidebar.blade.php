@@ -97,8 +97,8 @@
         <div id="parameter" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="utilities-color.html">Parameter Pengawasan</a>
-                <a class="collapse-item" href="utilities-border.html">Parameter Pegawai</a>
+                <a class="collapse-item" href="/parameter">Parameter Pengawasan</a>
+                <a class="collapse-item" href="">Parameter Pegawai</a>
                 <a class="collapse-item" href="utilities-color.html">Parameter Audit</a>
                 <a class="collapse-item" href="utilities-border.html">Parameter Email</a>
             </div>

@@ -5,6 +5,15 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\AuditeController;
 use App\Http\Controllers\PustakaProgramController;
 use App\Http\Controllers\RefrensiAuditController;
+use App\Http\Controllers\ParameterController;
+
+// parameter manajement
+use App\Http\Controllers\ParamInspektorat;
+use App\Http\Controllers\ParamKelompokTemuan;
+use App\Http\Controllers\ParamKodePenyebab;
+use App\Http\Controllers\ParamKatrefAudit;
+use App\Http\Controllers\ParamTipeAudit;
+
 
 
 /*
@@ -95,6 +104,13 @@ Route::get('/rfaudit/delete/{id}',[RefrensiAuditController::class,'delete'])->na
 Route::get('/rfaudit/edit/{id}',[RefrensiAuditController::class,'edit'])->name('rfaudit.edit');
 Route::post('/pustaka_prog/update_refprog/{id}',[RefrensiAuditController::class,'update_refprog'])->name('rfaudit.update_refprog');
 
+// manajemen parameter
+Route::get('/parameter',[ParameterController::class,'index']);
+Route::get('/paraminspektorat',[ParamInspektorat::class,'index']);
+Route::get('/Paramtemuan',[ParamKelompokTemuan::class,'index']);
+Route::get('/paramsebab',[ParamKodePenyebab::class,'index']);
+Route::get('/paramkataudit',[ParamKatrefAudit::class,'index']);
+Route::get('/paramtipeaud',[ParamTipeAudit::class,'index']);
 
 
 
