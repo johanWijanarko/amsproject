@@ -12,7 +12,7 @@
                    <a  class="btn btn-primary btn-sm btn-block" aria-labelledby="headingUtilities" href="/paraminspektorat" ><i class="fa fa-bookmark"></i> Parameter Inspektorat</a>
                 </div>
                 <div class="col-md-3 mb-2">
-                   <a  class="btn btn-primary btn-sm btn-block"><i class="fa fa-bookmark"></i> Tipe Audit</a>
+                   <a href="/paramtemuan"  class="btn btn-primary btn-sm btn-block"><i class="fa fa-bookmark"></i> Tipe Audit</a>
                 </div>
                 <div class="col-md-3 mb-2">
                    <a  class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Sub Tipe Audit</a>
@@ -21,7 +21,7 @@
                    <a  class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Kelompok Temuan</a>
                 </div>
                 <div class="col-md-3 mb-2">
-                   <a  class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Sub Kelompok Temuan</a>
+                   <a href="/paramtemuan"   class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Sub Kelompok Temuan</a>
                 </div>
                 <div class="col-md-3 mb-2">
                    <a  class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Jenis Temuan</a>
@@ -35,7 +35,7 @@
                    <a  class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Kode Penyebab</a>
                 </div>
                 <div class="col-md-3 mb-2">
-                   <a  class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Sub Kode Penyebab</a>
+                   <a href="/paramsebab" class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Sub Kode Penyebab</a>
                 </div>
                 <!-- <div class="col-md-3 mb-2">
                    <a  class="btn btn-primary btn-sm btn-block" Onclick="window.open('main_page.php?method=par_kode_penyebab_sub_sub', '_self');"><i class="fa fa-bookmark"></i> Sub Sub Kode Penyebab</a>
@@ -51,7 +51,7 @@
                    <a  class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Aspek Temuan Audit</a>
                 </div>
                 <div class="col-md-3 mb-2">
-                   <a  class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Kategori Referensi Audit</a>
+                   <a href="/paramkataudit" class="btn btn-primary btn-sm btn-block" ><i class="fa fa-bookmark"></i> Kategori Referensi Audit</a>
                 </div>
                 <div class="col-md-3 mb-2">
                    <a  class="btn btn-primary btn-sm btn-block" value="Hari Libur" ><i class="fa fa-bookmark"></i> Hari Libur</a>

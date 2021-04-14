@@ -7,13 +7,13 @@
 	<div class="card">
 		<div class="card-body">
             <div style="margin-top: 20px;">
-                <h1 class="h3 mb-3 text-gray-800">Inspektorat Penanggung Jawab</h1>
+                <h1 class="h3 mb-3 text-gray-800">Daftar Sub Kelompok</h1>
             </div>
             <div style="position: absolute; right: 30px; margin-top: -50px;">
-                <p>Cari Data Pegawai :</p>
+                <p>Cari Sub Kelompok :</p>
                 <form action="" method="GET">
                     {{ csrf_field() }}
-                    <input type="text" name="cari" placeholder="Input Nama .." value="{{ old('cari') }}">
+                    <input type="text" name="cari" placeholder="Input Sub Kelompok .." value="{{ old('cari') }}">
                     <input type="submit" value="CARI">
                 </form>   
             </div>     
@@ -21,8 +21,10 @@
             <table class="table table-bordered" style="margin-top: 40px;">
                 <thead class="thead-dark">
                     <tr>
-                        <th style="width:70px;">No</th>
-                        <th style="text-align: center;">Nip</th>
+                        <th style="width:50px;">No</th>
+                        <th style="text-align: center; width:120px;">Kode Sub Kelompok</th>
+                        <th style="text-align: center;">Sub Kelompok</th>
+                        <th style="text-align: center;">Kelompok</th>
                         <th scope="col" style="width:130px;">Aksi</th>
                     </tr>
                 </thead>
@@ -32,6 +34,8 @@
                     <tr>
                         <th scope="row"></th>
                         <td></td>
+                        <td></td>
+                        <td></td>
                         <td>
                         <a href="" data-toggle="tooltip" data-placement="top" title="Edit" class="btn btn-sm btn-outline-success rounded-circle"><i class="fas fa-pencil-alt"></i></a>
                         <a href="" data-toggle="tooltip" data-placement="top" title="Delete" class="btn btn-sm btn-outline-danger rounded-circle"><i class="far fa-trash-alt"></i></a>
@@ -40,7 +44,7 @@
                     {{-- @endforeach
                     @else: --}}
                     <tr>
-                        <td class="c-table__cell u-text-center" colspan="3">No Content</td>
+                        <td class="c-table__cell u-text-center" colspan="5">No Content</td>
                     </tr>
                     {{-- @endif --}}
                 </tbody>
@@ -53,9 +57,9 @@
             <div class="d-flex justify-content-center">
                 {{-- {!! $auditor->links() !!} --}}
             </div>
-            <a href="/parameter" class="btn btn-primary btn-md" role="button" aria-pressed="true">Back</a>    
             <br>
+            <a href="/parameter" class="btn btn-primary btn-md" role="button" aria-pressed="true">Back</a>  
         </div>
     </div>
-</div>    
+</div>        
 @endsection

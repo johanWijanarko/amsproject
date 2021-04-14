@@ -106,8 +106,13 @@ Route::post('/pustaka_prog/update_refprog/{id}',[RefrensiAuditController::class,
 
 // manajemen parameter
 Route::get('/parameter',[ParameterController::class,'index']);
+// inspektorat
 Route::get('/paraminspektorat',[ParamInspektorat::class,'index']);
-Route::get('/Paramtemuan',[ParamKelompokTemuan::class,'index']);
+
+
+
+
+Route::get('/paramtemuan',[ParamKelompokTemuan::class,'index']);
 Route::get('/paramsebab',[ParamKodePenyebab::class,'index']);
 Route::get('/paramkataudit',[ParamKatrefAudit::class,'index']);
 Route::get('/paramtipeaud',[ParamTipeAudit::class,'index']);

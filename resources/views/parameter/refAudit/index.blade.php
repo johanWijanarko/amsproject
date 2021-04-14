@@ -7,7 +7,7 @@
 	<div class="card">
 		<div class="card-body">
             <div style="margin-top: 20px;">
-                <h1 class="h3 mb-3 text-gray-800">Inspektorat Penanggung Jawab</h1>
+                <h1 class="h3 mb-3 text-gray-800">Daftar Kategori Referensi</h1>
             </div>
             <div style="position: absolute; right: 30px; margin-top: -50px;">
                 <p>Cari Data Pegawai :</p>
@@ -22,7 +22,7 @@
                 <thead class="thead-dark">
                     <tr>
                         <th style="width:70px;">No</th>
-                        <th style="text-align: center;">Nip</th>
+                        <th style="text-align: center;">Nama</th>
                         <th scope="col" style="width:130px;">Aksi</th>
                     </tr>
                 </thead>
