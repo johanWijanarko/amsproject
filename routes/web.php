@@ -92,6 +92,9 @@ Route::get('/rfaudit/cari',[RefrensiAuditController::class,'cari'])->name('rfaud
 Route::get('/rfaudit/tambah',[RefrensiAuditController::class,'tambah'])->name('rfaudit.tambah');
 Route::post('/rfaudit/save',[RefrensiAuditController::class,'save'])->name('rfaudit.save_refprog');
 Route::get('/rfaudit/delete/{id}',[RefrensiAuditController::class,'delete'])->name('rfaudit.delete');
+Route::get('/rfaudit/edit/{id}',[RefrensiAuditController::class,'edit'])->name('rfaudit.edit');
+Route::post('/pustaka_prog/update_refprog/{id}',[RefrensiAuditController::class,'update_refprog'])->name('rfaudit.update_refprog');
+
 
 
 

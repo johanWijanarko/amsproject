@@ -76,4 +76,44 @@ class RefrensiAuditController extends Controller
         Alert::success('Success','Data berhasil di Hapus');
         return redirect('/rfaudit');
     }
+    function edit(Request $request, $id){
+        $refaudit = DB::table('ref_audit')
+        ->leftjoin('par_kategori_ref', 'ref_audit_id_kategori', '=', 'kategori_ref_id')
+        ->select('ref_audit_id', 'ref_audit_no_kode' , 'ref_audit_nama', 'ref_audit_desc', 'kategori_ref_name', 'ref_audit_attach', 'ref_audit_link','ref_audit_id_kategori', 'ref_audit_tahun')
+        ->where('ref_audit_del_st', 1)
+        ->where('ref_audit_id', $id)
+        ->first();
+
+        $kategori = DB::table('par_kategori_ref')
+        ->select('kategori_ref_id', 'kategori_ref_name')
+        ->where('kategori_ref_del_st', 1)
+        ->get();
+
+        $tahun = DB::table('par_tahun')->get();
+
+        return view('refrensi_audit.edit', compact('refaudit', 'kategori', 'tahun'));
+    }
+
+    function update_refprog(Request $request, $id){
+        $path = $request->file('lampiran');
+        $update_file = [
+            'ref_audit_id_kategori' =>$request->kategori,
+            'ref_audit_no_kode' =>$request->nomorkode,
+            'ref_audit_tahun' =>$request->tahun,
+            'ref_audit_nama' =>$request->refrensi,
+            'ref_audit_desc' =>$request->keterangan,
+            'ref_audit_link' =>$request->link,
+        ];
+        if($path != null){
+            $path = $path->store('public/upload/');
+            $update_file['ref_audit_attach'] = $path;
+        }
+        // dd();
+
+        $affected = DB::table('ref_audit')
+        ->where('ref_audit_id', $id)
+        ->update($update_file);
+        Alert::success('Success','Data berhasil di Update');
+        return redirect('/rfaudit');
+    }
 }
